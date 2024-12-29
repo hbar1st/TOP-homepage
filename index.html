@@ -9,41 +9,46 @@
   <body>
     <section>
       <div>
-        <div><img src="headshot.jpg" alt="Stock profile picture" /></div>
+        <div>
+          <picture>
+            <source srcset="headshot-cropped.jpg" media="(min-width: 600px)" />
+            <img src="headshot.jpg" alt="Stock profile picture" />
+          </picture>
 
-        <h1>First LastName</h1>
+          <h1>First LastName</h1>
 
-        <section>
-          <h2>About me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
-            consectetur odio, sed convallis ex. Sed luctus orci at eleifend
-            vulputate. Nunc tincidunt ut tortor in vehicula. Cras maximus tortor
-            mi, at tincidunt ante suscipit nec. Vestibulum interdum tortor sit
-            amet placerat maximus. Etiam ac orci feugiat, commodo mi et, gravida
-            dolor.
-          </p>
-          <footer>
-            <a href=""
-              ><img
-                class="icon2"
-                src="github-original.svg"
-                alt="github profile"
-            /></a>
-            <a href=""
-              ><img
-                class="icon2"
-                src="fcc_secondary_small.png"
-                alt="freeCodeCamp profile"
-            /></a>
-            <a href=""
-              ><img
-                class="icon2"
-                src="discord-mark-black.png"
-                alt="discord profile"
-            /></a>
-          </footer>
-        </section>
+          <section>
+            <h2>About me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
+              consectetur odio, sed convallis ex. Sed luctus orci at eleifend
+              vulputate. Nunc tincidunt ut tortor in vehicula. Cras maximus
+              tortor mi, at tincidunt ante suscipit nec. Vestibulum interdum
+              tortor sit amet placerat maximus. Etiam ac orci feugiat, commodo
+              mi et, gravida dolor.
+            </p>
+            <footer>
+              <a href=""
+                ><img
+                  class="icon2"
+                  src="github-original.svg"
+                  alt="github profile"
+              /></a>
+              <a href=""
+                ><img
+                  class="icon2"
+                  src="fcc_secondary_small.png"
+                  alt="freeCodeCamp profile"
+              /></a>
+              <a href=""
+                ><img
+                  class="icon2"
+                  src="discord-mark-black.png"
+                  alt="discord profile"
+              /></a>
+            </footer>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -206,8 +211,10 @@
             </div>
           </address>
         </div>
-
-        <img src="contact-me.jpg" alt="Stock image of woman on the phone" />
+        <picture>
+          <source srcset="contact-me-thin.jpg" media="(max-width: 600px)" />
+          <img src="contact-me.jpg" alt="Stock image of woman on the phone" />
+        </picture>
       </div>
     </section>
   </body>
