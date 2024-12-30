@@ -15,7 +15,6 @@ body {
   > section:nth-child(1) {
     grid-row: 1;
     grid-column: 1 / span 3;
-    max-height: 95dvh;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: subgrid;
