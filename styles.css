@@ -20,7 +20,13 @@ body {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: subgrid;
-    background: linear-gradient(161deg, green 0%, green 65%, white 65%, white);
+    background: linear-gradient(
+      161deg,
+      green 0%,
+      green 65vh,
+      white 65vh,
+      white
+    );
   }
   > section:nth-child(2) {
     grid-row: 2;
@@ -238,11 +244,31 @@ p {
 }
 
 @media (max-width: 600px) {
+  body > section:nth-child(1) {
+    max-height: fit-content;
+    > div > div.important {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  body > section:nth-child(1) > div > div > section > footer.important {
+    align-self: center;
+  }
+  body > section:nth-child(1) > div > div > section.important {
+    box-shadow: none;
+  }
   body > section:nth-child(3) > div > div,
   body > section:nth-child(3) > div > picture {
     max-width: 100%;
   }
   body > section:nth-child(3) > div > div > address > div > div {
     justify-content: center;
+  }
+  body > section:nth-child(1) > div > div > h1 {
+    position: absolute;
+    left: -10px;
+    top: 410px;
+    font-size: 5rem;
   }
 }
