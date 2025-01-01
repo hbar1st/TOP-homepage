@@ -195,7 +195,7 @@ body {
           }
           a {
             margin-top: 10px;
-            font-size: (1vw + 1rem);
+            font-size: calc(1vw + 1rem);
             color: white;
             text-decoration: none;
             display: flex;
