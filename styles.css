@@ -147,7 +147,7 @@ body {
           }
         }
         p {
-          font-size: (1vw + 1rem);
+          font-size: calc(1vw + 1rem);
         }
       }
     }
