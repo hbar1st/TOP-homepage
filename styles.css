@@ -309,7 +309,9 @@ p {
 
 @media (max-width: 600px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    max-width: 100%;
+    width: auto !important;
   }
   .fake-image {
     display: none;
