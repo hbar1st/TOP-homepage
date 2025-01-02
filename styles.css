@@ -332,7 +332,9 @@ p {
       }
     }
   }
-
+  h2 {
+    align-self: center;
+  }
   body > section:nth-child(1) > div > div > section.important {
     box-shadow: none;
     grid-row: 2;
