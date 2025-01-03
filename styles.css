@@ -25,7 +25,7 @@ body {
       161deg,
       green 0%,
       green 65vh,
-      white 65vh,
+      white 66vh,
       white
     );
   }
@@ -267,7 +267,7 @@ p {
     float: left;
   }
   body > section:nth-child(1) {
-    background: linear-gradient(156deg, green 0%, green 65%, white 65%, white);
+    background: linear-gradient(156deg, green 0%, green 54%, white 55%, white);
     margin-bottom: 5em;
     grid-template-rows: auto;
   }
@@ -406,7 +406,7 @@ p {
       156deg,
       green 0%,
       green 51vh,
-      white 51vh,
+      white 52vh,
       white
     );
   }
