@@ -344,10 +344,10 @@ p {
     overflow-x: hidden !important;
     max-width: 100%;
     width: auto !important;
+
+    grid-template-columns: 1fr minmax(auto, 90%) 1fr;
   }
-  .fake-image {
-    display: none;
-  }
+
   body > section:nth-child(1) {
     padding: 0px;
     > div {
@@ -377,7 +377,7 @@ p {
   }
 
   body > section:nth-child(1) > div > div > h1.important {
-    font-size: 5rem;
+    font-size: calc(10% + 2rem);
     grid-column: 1;
     grid-row: 1;
     align-self: end;
@@ -409,8 +409,5 @@ p {
       white 51vh,
       white
     );
-    section.important {
-      margin-top: 5em;
-    }
   }
 }
