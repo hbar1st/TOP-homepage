@@ -385,7 +385,9 @@ p {
   body > section:nth-child(1) > div > div > section > footer.important {
     align-self: center;
   }
-
+  body > section:nth-child(3) > div {
+    flex-direction: column;
+  }
   body > section:nth-child(3) > div > div {
     max-width: 100%;
   }
